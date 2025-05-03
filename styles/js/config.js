@@ -207,7 +207,7 @@ charadex.page.mainMasterlist = {
       sheetPage: charadex.sheet.pages.mainMasterlistLog,
       primaryProperty: 'id',
       relatedProperty: 'id',
-      dexSelector: 'log',
+      dexSelector: 'mainmasterlistlog',
       profileProperty: 'maindesign',
       profileToggle: false,
 
@@ -283,7 +283,7 @@ charadex.page.petsMasterlist = {
       sheetPage: charadex.sheet.pages.petsLog,
       primaryProperty: 'id',
       relatedProperty: 'id',
-      dexSelector: 'log',
+      dexSelector: 'petslog',
       profileProperty: 'petdesign',
       profileToggle: false,
 
@@ -377,7 +377,7 @@ charadex.page.inventory = {
 
       // This imports the config from the masterlist
       // So you dont have to repeat yourself
-      ...charadex.page.petMasterlist, 
+      ...charadex.page.petsMasterlist, 
 
       sheetPage: charadex.sheet.pages.petsMasterlist,
       sitePage: 'petsmasterlist',
