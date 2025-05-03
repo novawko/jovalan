@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         if (charadex.tools.checkArray(listData.profileArray[0].mainmasterlistlog)) {
           let logs = await charadex.initialize.page(
             listData.profileArray[0].mainmasterlistlog,
-            charadex.page.masterlist.relatedData['main masterlist log']
+            charadex.page.mainmasterlist.relatedData['main masterlist log']
           );
         }
 
