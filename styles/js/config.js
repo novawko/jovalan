@@ -208,7 +208,7 @@ charadex.page.mainMasterlist = {
       primaryProperty: 'id',
       relatedProperty: 'id',
       dexSelector: 'log',
-      profileProperty: 'design',
+      profileProperty: 'mainDesign',
       profileToggle: false,
 
       sort: {
