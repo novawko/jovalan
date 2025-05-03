@@ -160,7 +160,7 @@ charadex.page.mainMasterlist = {
   sheetPage: charadex.sheet.pages.mainMasterlist,
   sitePage: 'mainmasterlist',
   dexSelector: 'charadex',
-  profileProperty: 'design',
+  profileProperty: 'maindesign',
 
   sort: {
     toggle: true,
@@ -208,7 +208,7 @@ charadex.page.mainMasterlist = {
       primaryProperty: 'id',
       relatedProperty: 'id',
       dexSelector: 'log',
-      profileProperty: 'design',
+      profileProperty: 'maindesign',
       profileToggle: false,
 
       sort: {
@@ -237,7 +237,7 @@ charadex.page.petsMasterlist = {
   sheetPage: charadex.sheet.pages.petsMasterlist,
   sitePage: 'petsmasterlist',
   dexSelector: 'charadex',
-  profileProperty: 'design',
+  profileProperty: 'petdesign',
 
   sort: {
     toggle: true,
@@ -284,7 +284,7 @@ charadex.page.petsMasterlist = {
       primaryProperty: 'id',
       relatedProperty: 'id',
       dexSelector: 'log',
-      profileProperty: 'design',
+      profileProperty: 'petdesign',
       profileToggle: false,
 
       sort: {
@@ -365,8 +365,8 @@ charadex.page.inventory = {
       sitePage: 'mainmasterlist',
       primaryProperty: 'username',
       relatedProperty: 'owner',
-      dexSelector: 'designs',
-      profileProperty: 'design',
+      dexSelector: 'maindesigns',
+      profileProperty: 'maindesign',
       profileToggle: false,
 
     }
@@ -383,8 +383,8 @@ charadex.page.inventory = {
       sitePage: 'petsmasterlist',
       primaryProperty: 'username',
       relatedProperty: 'owner',
-      dexSelector: 'designs',
-      profileProperty: 'design',
+      dexSelector: 'petdesigns',
+      profileProperty: 'petdesign',
       profileToggle: false,
 
     }
@@ -396,15 +396,15 @@ charadex.page.inventory = {
 /* --------------------------------------------------------------- */
 charadex.page.index = {
 
-  designs: {
+  maindesigns: {
     ... charadex.page.mainMasterlist,
-    dexSelector: 'design',
+    dexSelector: 'maindesign',
     amount: 8,
   },
 
-  designs: {
+  petdesigns: {
     ... charadex.page.petsMasterlist,
-    dexSelector: 'design',
+    dexSelector: 'petdesign',
     amount: 4,
   }
 
