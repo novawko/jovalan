@@ -410,8 +410,6 @@ charadex.page.inventory = {
 
   },
 
-  }
-
 };
 
 
