@@ -439,13 +439,13 @@ charadex.page.index = {
     amount: 6,
   },
 
-  designs: {
+  MainDesigns: {
     ... charadex.page.masterlist,
     dexSelector: 'mainDesign',
     amount: 8,
   }
 
-  designs: {
+  petDesigns: {
     ... charadex.page.petsMasterlist,
     dexSelector: 'petDesign',
     amount: 4,
