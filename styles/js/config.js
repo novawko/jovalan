@@ -362,7 +362,7 @@ charadex.page.inventory = {
       ...charadex.page.mainMasterlist, 
 
       sheetPage: charadex.sheet.pages.mainMasterlist,
-      sitePage: 'mainmasterlist',
+      sitePage: 'masterlist',
       primaryProperty: 'username',
       relatedProperty: 'owner',
       dexSelector: 'mainDesigns',
@@ -380,7 +380,7 @@ charadex.page.inventory = {
       ...charadex.page.petMasterlist, 
 
       sheetPage: charadex.sheet.pages.petsMasterlist,
-      sitePage: 'petsmasterlist',
+      sitePage: 'masterlist',
       primaryProperty: 'username',
       relatedProperty: 'owner',
       dexSelector: 'petDesigns',
