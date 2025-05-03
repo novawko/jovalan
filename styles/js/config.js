@@ -213,7 +213,7 @@ charadex.page.mainMasterlist = {
 
       sort: {
         toggle: true,
-        key: "maintimestamp",
+        key: "timestamp",
         order: "desc",
         parameters: []
       },
@@ -289,7 +289,7 @@ charadex.page.petsMasterlist = {
 
       sort: {
         toggle: true,
-        key: "pettimestamp",
+        key: "timestamp",
         order: "desc",
         parameters: []
       },
