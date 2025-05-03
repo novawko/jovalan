@@ -18,10 +18,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (listData.type == 'profile') {
 
         // Create the log dex
-        if (charadex.tools.checkArray(listData.profileArray[0].mainMasterlistLog)) {
+        if (charadex.tools.checkArray(listData.profileArray[0].mainmasterlistlog)) {
           let logs = await charadex.initialize.page(
-            listData.profileArray[0].mainMasterlistLog,
-            charadex.page.mainMasterlist.relatedData['main masterlist log']
+            listData.profileArray[0].mainmasterlistlog,
+            charadex.page.masterlist.relatedData['main masterlist log']
           );
         }
 
