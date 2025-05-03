@@ -155,7 +155,7 @@ charadex.page.faq = {
 
 /* Masterlist
 /* --------------------------------------------------------------- */
-charadex.page.mainMasterlist = {
+charadex.page.masterlist = {
 
   sheetPage: charadex.sheet.pages.mainMasterlist,
   sitePage: 'mainmasterlist',
@@ -232,7 +232,7 @@ charadex.page.mainMasterlist = {
 
 /* Pets Masterlist
 /* --------------------------------------------------------------- */
-charadex.page.petsMasterlist = {
+charadex.page.masterlist = {
 
   sheetPage: charadex.sheet.pages.petsMasterlist,
   sitePage: 'petsmasterlist',
