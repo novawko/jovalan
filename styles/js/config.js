@@ -43,7 +43,7 @@ charadex.sheet = {
     statuses: ['All', 'Resell', 'Trade', 'Gift', 'Voided', 'For Sale', 'Purchased', 'WIP', 'Not For Trade'],
     petStatuses: ['All', 'Yes', 'No'],
     rarity: ['All', 'Common', 'Uncommon', 'Rare', 'Mythical', 'Legendary', 'Unique', 'Etherial', 'Tier1', 'Tier2', 'Royal Tier', 'Open', 'Closed', 'Unlisted', 'Voided'],
-    species: ['All', 'Kanpolo', 'Deep Sea Kanpolo', 'Freshwater Kanpolo', 'Hyper Kanpolo', 'Cracke'D', 'Kumiyaa', 'Burgvoir', 'Liz'ae', 'Bood Shark', 'Tech-Alipo', 'Vanguard', 'Cedave', 'Serum X', 'Koekanook', 'Humboroon', 'Noodle Moth', 'Heavian', 'Woobar', 'Sylvarian', 'Yohl'Tonir'],
+    species: ['All', 'Kanpolo', 'Deep Sea Kanpolo', 'Freshwater Kanpolo', 'Hyper Kanpolo', 'Cracke’D', 'Kumiyaa', 'Burgvoir', 'Liz’ae', 'Bood Shark', 'Tech-Alipo', 'Vanguard', 'Cedave', 'Serum X', 'Koekanook', 'Humboroon', 'Noodle Moth', 'Heavian', 'Woobar', 'Sylvarian', 'Yohl’Tonir'],
     petSpecies: ['All', 'Cooinowee', 'Narrasael', 'Cuid', 'Jovian Sea Serpent', 'Maambacor', 'Gorwahna', 'Quecko', 'Wottlepodl', 'Chubbö', 'Kiutu', 'Yuecoatl', 'Cuttle-Poddl'],
   }
 
@@ -374,24 +374,41 @@ charadex.page.inventory = {
     },
     
 
-    [charadex.sheet.pages.masterlist]: {
+    [charadex.sheet.pages.mainMasterlist]: {
 
       // This imports the config from the masterlist
       // So you dont have to repeat yourself
-      ...charadex.page.masterlist, 
+      ...charadex.page.mainMasterlist, 
 
       sheetPage: charadex.sheet.pages.mainMasterlist,
-      sitePage: 'mainMasterlist',
+      sitePage: 'mainmasterlist',
       primaryProperty: 'username',
       relatedProperty: 'owner',
-      dexSelector: 'designs',
-      profileProperty: 'design',
+      dexSelector: 'mainDesigns',
+      profileProperty: 'mainDesign',
       profileToggle: false,
 
     }
 
   },
 
+ [charadex.sheet.pages.petsMasterlist]: {
+
+      // This imports the config from the masterlist
+      // So you dont have to repeat yourself
+      ...charadex.page.petMasterlist, 
+
+      sheetPage: charadex.sheet.pages.petsMasterlist,
+      sitePage: 'petsmasterlist',
+      primaryProperty: 'username',
+      relatedProperty: 'owner',
+      dexSelector: 'petDesigns',
+      profileProperty: 'petDesign',
+      profileToggle: false,
+
+    }
+
+  },
   
   // This is a special config for their inventory
   inventoryConfig: {
@@ -433,19 +450,13 @@ charadex.page.inventory = {
 /* --------------------------------------------------------------- */
 charadex.page.index = {
 
-  staff: {
-    ... charadex.page.staff,
-    dexSelector: 'staff',
-    amount: 6,
-  },
-
-  designs: {
+  mainDesigns: {
     ... charadex.page.mainMasterlist,
     dexSelector: 'mainDesign',
     amount: 8,
   }
 
-  designs: {
+  petDesigns: {
     ... charadex.page.petsMasterlist,
     dexSelector: 'petDesign',
     amount: 4,
