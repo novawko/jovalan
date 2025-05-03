@@ -396,13 +396,13 @@ charadex.page.inventory = {
 /* --------------------------------------------------------------- */
 charadex.page.index = {
 
-  maindesigns: {
+  designs: {
     ... charadex.page.mainMasterlist,
     dexSelector: 'maindesign',
     amount: 8,
   },
 
-  petdesigns: {
+  designs: {
     ... charadex.page.petsMasterlist,
     dexSelector: 'petdesign',
     amount: 4,
