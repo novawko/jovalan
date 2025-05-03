@@ -11,17 +11,17 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   let dex = await charadex.initialize.page(
     null,
-    charadex.page.masterlist,
+    charadex.page.petsmasterlist,
     null, 
     async (listData) => {
 
       if (listData.type == 'profile') {
 
            // Create the log dex
-        if (charadex.tools.checkArray(listData.profileArray[0].petLog)) {
+        if (charadex.tools.checkArray(listData.profileArray[0].petsLog)) {
           let logs = await charadex.initialize.page(
-            listData.profileArray[0].petLog,
-            charadex.page.masterlist.relatedData['pet log']
+            listData.profileArray[0].petsLog,
+            charadex.page.petsmasterlist.relatedData['pets log']
           );
         }
 
