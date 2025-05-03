@@ -365,8 +365,8 @@ charadex.page.inventory = {
       sitePage: 'masterlist',
       primaryProperty: 'username',
       relatedProperty: 'owner',
-      dexSelector: 'mainDesigns',
-      profileProperty: 'mainDesign',
+      dexSelector: 'designs',
+      profileProperty: 'design',
       profileToggle: false,
 
     }
@@ -383,8 +383,8 @@ charadex.page.inventory = {
       sitePage: 'masterlist',
       primaryProperty: 'username',
       relatedProperty: 'owner',
-      dexSelector: 'petDesigns',
-      profileProperty: 'petDesign',
+      dexSelector: 'designs',
+      profileProperty: 'design',
       profileToggle: false,
 
     }
@@ -396,15 +396,15 @@ charadex.page.inventory = {
 /* --------------------------------------------------------------- */
 charadex.page.index = {
 
-  mainDesigns: {
+  designs: {
     ... charadex.page.mainMasterlist,
-    dexSelector: 'mainDesign',
+    dexSelector: 'design',
     amount: 8,
   },
 
-  petDesigns: {
+  designs: {
     ... charadex.page.petsMasterlist,
-    dexSelector: 'petDesign',
+    dexSelector: 'design',
     amount: 4,
   }
 
