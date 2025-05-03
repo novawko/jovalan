@@ -16,7 +16,7 @@ let charadex = {};
 /* ==================================================================== */
 charadex.site = {
   title: "Jovalan",
-  url: "https://cancriplasm.github.io/jovalan/",
+  url: "https://jovalan.netlify.app/",
   description: `An aquatic multi-species world.`
 }
 
@@ -158,7 +158,7 @@ charadex.page.faq = {
 charadex.page.mainMasterlist = {
 
   sheetPage: charadex.sheet.pages.mainMasterlist,
-  sitePage: 'mainMasterlist',
+  sitePage: 'masterlist',
   dexSelector: 'charadex',
   profileProperty: 'mainDesign',
 
@@ -235,7 +235,7 @@ charadex.page.mainMasterlist = {
 charadex.page.petsMasterlist = {
 
   sheetPage: charadex.sheet.pages.petsMasterlist,
-  sitePage: 'petsMasterlist',
+  sitePage: 'masterlist',
   dexSelector: 'charadex',
   profileProperty: 'petDesign',
 
