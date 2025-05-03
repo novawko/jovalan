@@ -158,7 +158,7 @@ charadex.page.faq = {
 charadex.page.mainMasterlist = {
 
   sheetPage: charadex.sheet.pages.mainMasterlist,
-  sitePage: 'masterlist',
+  sitePage: 'mainmasterlist',
   dexSelector: 'charadex',
   profileProperty: 'design',
 
@@ -235,7 +235,7 @@ charadex.page.mainMasterlist = {
 charadex.page.petsMasterlist = {
 
   sheetPage: charadex.sheet.pages.petsMasterlist,
-  sitePage: 'masterlist',
+  sitePage: 'petsmasterlist',
   dexSelector: 'charadex',
   profileProperty: 'design',
 
