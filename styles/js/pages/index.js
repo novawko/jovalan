@@ -40,12 +40,22 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
 
 
-  /* Designs
+  /* Main Designs
   ===================================================================== */
-  let designs = await charadex.initialize.page(null, charadex.page.index.designs, (arr) => {
+  let mainDesigns = await charadex.initialize.page(null, charadex.page.index.mainDesigns, (arr) => {
     
     // Splice the silly little array
-    let sliceAmount = charadex.page.index.designs.amount || 6;
+    let sliceAmount = charadex.page.index.mainDesigns.amount || 6;
+    arr.splice(sliceAmount, arr.length);
+
+  });
+
+    /* Pet Designs
+  ===================================================================== */
+  let petDesigns = await charadex.initialize.page(null, charadex.page.index.petDesigns, (arr) => {
+    
+    // Splice the silly little array
+    let sliceAmount = charadex.page.index.petDesigns.amount || 6;
     arr.splice(sliceAmount, arr.length);
 
   });
