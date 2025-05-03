@@ -409,37 +409,6 @@ charadex.page.inventory = {
     }
 
   },
-  
-  // This is a special config for their inventory
-  inventoryConfig: {
-
-    sheetPage: charadex.sheet.pages.items,
-    sitePage: 'items',
-    dexSelector: 'inventory',
-    profileProperty: 'item',
-    profileToggle: false,
-
-    sort: {
-      toggle: true,
-      sortProperty: "item",
-      order: "asc",
-      parametersKey: 'type', 
-      parameters: charadex.sheet.options.itemTypes
-    },
-
-    search: {
-      toggle: true,
-      filterToggle: false,
-      parameters: ['Item']
-    },
-
-    filters: {
-      toggle: true,
-      parameters: {
-        'Type': charadex.sheet.options.itemTypes,
-        'Rarity': charadex.sheet.options.rarity,
-      }
-    },
 
   }
 
