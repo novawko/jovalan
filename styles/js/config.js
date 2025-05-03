@@ -256,7 +256,7 @@ charadex.page.petsMasterlist = {
     toggle: true,
     parameters: {
       'Status': charadex.sheet.options.statuses,
-      'Active': charadex.sheet.options.petStatuses,
+      'Activity Status': charadex.sheet.options.petStatuses,
     }
   },
 
