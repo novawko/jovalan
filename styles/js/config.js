@@ -160,7 +160,7 @@ charadex.page.mainMasterlist = {
   sheetPage: charadex.sheet.pages.mainMasterlist,
   sitePage: 'masterlist',
   dexSelector: 'charadex',
-  profileProperty: 'mainDesign',
+  profileProperty: 'design',
 
   sort: {
     toggle: true,
@@ -208,7 +208,7 @@ charadex.page.mainMasterlist = {
       primaryProperty: 'id',
       relatedProperty: 'id',
       dexSelector: 'log',
-      profileProperty: 'mainDesign',
+      profileProperty: 'design',
       profileToggle: false,
 
       sort: {
@@ -237,7 +237,7 @@ charadex.page.petsMasterlist = {
   sheetPage: charadex.sheet.pages.petsMasterlist,
   sitePage: 'masterlist',
   dexSelector: 'charadex',
-  profileProperty: 'petDesign',
+  profileProperty: 'design',
 
   sort: {
     toggle: true,
@@ -283,8 +283,8 @@ charadex.page.petsMasterlist = {
       sheetPage: charadex.sheet.pages.petsLog,
       primaryProperty: 'id',
       relatedProperty: 'id',
-      dexSelector: 'petsLog',
-      profileProperty: 'petDesign',
+      dexSelector: 'log',
+      profileProperty: 'design',
       profileToggle: false,
 
       sort: {
