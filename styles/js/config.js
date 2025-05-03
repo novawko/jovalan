@@ -380,8 +380,8 @@ charadex.page.inventory = {
       // So you dont have to repeat yourself
       ...charadex.page.masterlist, 
 
-      sheetPage: charadex.sheet.pages.masterlist,
-      sitePage: 'masterlist',
+      sheetPage: charadex.sheet.pages.mainMasterlist,
+      sitePage: 'mainMasterlist',
       primaryProperty: 'username',
       relatedProperty: 'owner',
       dexSelector: 'designs',
