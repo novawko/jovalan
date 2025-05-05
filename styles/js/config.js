@@ -202,7 +202,7 @@ charadex.page.mainMasterlist = {
 
   relatedData: {
 
-    [charadex.sheet.pages.mainMasterlist]: {
+    [charadex.sheet.pages.mainMasterlistLog]: {
 
       sheetPage: charadex.sheet.pages.mainMasterlistLog,
       primaryProperty: 'id',
@@ -278,7 +278,7 @@ charadex.page.petsMasterlist = {
 
   relatedData: {
 
-    [charadex.sheet.pages.petsMasterlist]: {
+    [charadex.sheet.pages.petsLog]: {
 
       sheetPage: charadex.sheet.pages.petsLog,
       primaryProperty: 'id',
