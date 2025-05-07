@@ -399,12 +399,14 @@ charadex.page.index = {
   maindesigns: {
     ... charadex.page.mainMasterlist,
     dexSelector: 'maindesign',
+    order: "desc",
     amount: 8,
   },
 
   petdesigns: {
     ... charadex.page.petsMasterlist,
     dexSelector: 'petdesign',
+    order: "desc",
     amount: 4,
   }
 
