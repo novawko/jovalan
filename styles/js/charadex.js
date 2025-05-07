@@ -231,6 +231,6 @@ charadex.initialize.groupGallery = async function (config, dataArray, groupBy, c
 
 function myFunction() {
   document.getElementById("nologtext").placeholder = "👻 Nothing here!";
-}
+};
 
 export { charadex };
