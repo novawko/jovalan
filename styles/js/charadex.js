@@ -229,4 +229,8 @@ charadex.initialize.groupGallery = async function (config, dataArray, groupBy, c
 
 };
 
+function myFunction() {
+  document.getElementById("log-gallery-item").placeholder = "👻 Nothing here!";
+}
+
 export { charadex };
