@@ -42,20 +42,20 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   /* Main Designs
   ===================================================================== */
-  let designs = await charadex.initialize.page(null, charadex.page.index.mainDesigns, (arr) => {
+  let designs = await charadex.initialize.page(null, charadex.page.index.maindesigns, (arr) => {
     
     // Splice the silly little array
-    let sliceAmount = charadex.page.index.mainDesigns.amount || 6;
+    let sliceAmount = charadex.page.index.maindesigns.amount || 6;
     arr.splice(sliceAmount, arr.length);
 
   });
 
     /* Pet Designs
   ===================================================================== */
-  let designs = await charadex.initialize.page(null, charadex.page.index.petDesigns, (arr) => {
+  let designs = await charadex.initialize.page(null, charadex.page.index.petdesigns, (arr) => {
     
     // Splice the silly little array
-    let sliceAmount = charadex.page.index.petDesigns.amount || 6;
+    let sliceAmount = charadex.page.index.petdesigns.amount || 6;
     arr.splice(sliceAmount, arr.length);
 
   });
