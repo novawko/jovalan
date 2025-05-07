@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   /* Main Designs
   ===================================================================== */
-  let designs = await charadex.initialize.page(null, charadex.page.index.maindesigns, (arr) => {
+  let maindesigns = await charadex.initialize.page(null, charadex.page.index.maindesigns, (arr) => {
     
     // Splice the silly little array
     let sliceAmount = charadex.page.index.maindesigns.amount || 6;
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     /* Pet Designs
   ===================================================================== */
-  let designs = await charadex.initialize.page(null, charadex.page.index.petdesigns, (arr) => {
+  let petdesigns = await charadex.initialize.page(null, charadex.page.index.petdesigns, (arr) => {
     
     // Splice the silly little array
     let sliceAmount = charadex.page.index.petdesigns.amount || 6;
