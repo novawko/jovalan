@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     /* Pet Designs
   ===================================================================== */
-  let designs = await charadex.initialize.page(null, charadex.page.index.petsDesigns, (arr) => {
+  let designs = await charadex.initialize.page(null, charadex.page.index.petDesigns, (arr) => {
     
     // Splice the silly little array
     let sliceAmount = charadex.page.index.petDesigns.amount || 6;
