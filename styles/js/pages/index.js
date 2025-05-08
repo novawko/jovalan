@@ -48,9 +48,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     let sliceAmount = charadex.page.index.maindesigns.amount || 6;
     arr.splice(sliceAmount, arr.length);
 
-    // Filter out any MYO slots, reverse and pull the first 4
-    let maindesigns = maindesigns.filter((i) => { return i.designtype != 'MYO' }).reverse().slice(0, charadex.page.index.maindesigns);
-
   });
 
 
