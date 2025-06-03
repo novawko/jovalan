@@ -401,8 +401,11 @@ charadex.page.index = {
     dexSelector: 'maindesign',
     amount: 8,
 
-  sort: {
-    order: "desc",
+    sort: {
+      toggle: true,
+      key: "id",
+      order: "desc",
+      parameters: []
     },
 
   },
@@ -412,8 +415,11 @@ charadex.page.index = {
     dexSelector: 'petdesign',
     amount: 4,
 
-   sort: {
-    order: "desc",
+    sort: {
+      toggle: true,
+      key: "id",
+      order: "desc",
+      parameters: []
     },
 
   },
