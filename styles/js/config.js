@@ -400,14 +400,22 @@ charadex.page.index = {
     ... charadex.page.mainMasterlist,
     dexSelector: 'maindesign',
     amount: 8,
+
+  sort: {
     order: "desc",
+    }
+
   },
 
   petdesigns: {
     ... charadex.page.petsMasterlist,
     dexSelector: 'petdesign',
     amount: 4,
+
+   sort: {
     order: "desc",
+    }
+
   }
 
 };
