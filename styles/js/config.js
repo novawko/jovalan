@@ -403,8 +403,8 @@ charadex.page.index = {
 
     sort: {
       toggle: true,
-      sortProperty: "id",
-      itemOrder: "desc",
+      key: "id",
+      order: "desc",
       parameters: []
     },
 
@@ -417,8 +417,8 @@ charadex.page.index = {
 
     sort: {
       toggle: true,
-      sortProperty: "id",
-      itemOrder: "desc",
+      key: "id",
+      order: "desc",
       parameters: []
     },
 
