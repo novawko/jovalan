@@ -165,7 +165,7 @@ charadex.page.mainMasterlist = {
   sort: {
     toggle: true,
     key: "id",
-    order: "asc",
+    order: "desc",
     parameters: []
   },
 
@@ -242,7 +242,7 @@ charadex.page.petsMasterlist = {
   sort: {
     toggle: true,
     key: "id",
-    order: "asc",
+    order: "desc",
     parameters: []
   },
 
@@ -401,26 +401,12 @@ charadex.page.index = {
     dexSelector: 'maindesign',
     amount: 8,
 
-    sort: {
-      toggle: true,
-      key: "id",
-      order: "desc",
-      parameters: []
-    },
-
   },
 
   petdesigns: {
     ... charadex.page.petsMasterlist,
     dexSelector: 'petdesign',
     amount: 4,
-
-    sort: {
-      toggle: true,
-      key: "id",
-      order: "desc",
-      parameters: []
-    },
 
   },
 
