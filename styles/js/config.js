@@ -403,7 +403,7 @@ charadex.page.index = {
 
   sort: {
     order: "desc",
-    }
+    },
 
   },
 
@@ -414,9 +414,9 @@ charadex.page.index = {
 
    sort: {
     order: "desc",
-    }
+    },
 
-  }
+  },
 
 };
 
