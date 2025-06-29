@@ -401,14 +401,21 @@ charadex.page.index = {
     dexSelector: 'maindesign',
     amount: 8,
     order: desc,
-
+    
+sort: {
+    toggle: true,
+    key: "id",
+    order: "desc",
+    parameters: []
+  },
+    
   },
 
   petdesigns: {
     ... charadex.page.petsMasterlist,
     dexSelector: 'petdesign',
     amount: 4,
-    order: desc,
+    
 
   },
 
