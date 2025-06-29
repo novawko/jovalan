@@ -400,14 +400,6 @@ charadex.page.index = {
     ... charadex.page.mainMasterlist,
     dexSelector: 'maindesign',
     amount: 8,
-    order: desc,
-    
-sort: {
-    toggle: true,
-    key: "id",
-    order: "desc",
-    parameters: []
-  },
     
   },
 
