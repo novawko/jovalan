@@ -31,15 +31,3 @@ document.addEventListener("DOMContentLoaded", async () => {
   );
   
   charadex.tools.loadPage('.softload', 500);
-
-/* ==================================================================== */
-/* Sort Fix
-======================================================================= */
-
-// Create an Array
-const charadex.page.mainMasterlist = ["ID"];
-
-// Reverse the Array
-const charadex.page.mainMasterlist = charadex.page.mainMasterlist.reverse();
-  
-});
