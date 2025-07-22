@@ -54,10 +54,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   arr.push(...recent);
 
   // Reverse the thing
-  let recent = [];
-  let maindesigns = [...recent].reverse();
+  let recent = ["ID"];
+  customReverse(maindesigns);
   console.log(maindesigns);
-  console.log(recent);
 
   });
 
@@ -76,10 +75,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   arr.push(...recent);
 
   // Reverse the thing
-  let recent = [];
-  let petdesigns = [...recent].reverse();
+  let recent = ["ID"];
+  customReverse(petdesigns);
   console.log(petdesigns);
-  console.log(recent);
 
   });
 
