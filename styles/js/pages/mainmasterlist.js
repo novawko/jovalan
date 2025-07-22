@@ -37,7 +37,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 ======================================================================= */
 
 const charadex.page.mainMasterlist = ["ID"];
-const charadex.page.mainMasterlist = charadex.page.mainMasterlist.reverse();
-console.log(charadex.page.mainMasterlist);
+charadex.page.mainMasterlist.reverse();
   
 });
