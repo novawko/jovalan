@@ -86,10 +86,10 @@ let maindesigns = await charadex.initialize.page(null, charadex.page.index.maind
   /* Pet Designs Sort Fix
   ===================================================================== */
 let petdesigns = await charadex.initialize.page(null, charadex.page.index.petdesigns, (arr) => {
-  // Force sliceAmount to 8
-  let sliceAmount = 8;
+  // Force sliceAmount to 4
+  let sliceAmount = 4;
 
-  // Get the last 8 (or fewer if less than 8 exist)
+  // Get the last 4 (or fewer if less than 4 exist)
   let recent = arr.slice(-sliceAmount);
 
   // Overwrite original array in-place
