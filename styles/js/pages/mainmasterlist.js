@@ -40,8 +40,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 const charadex.page.mainMasterlist = ["ID"];
 
 // Reverse the Array
-const charadex.page.mainMasterlist2 = charadex.page.mainMasterlist.reverse();
+const charadex.page.mainMasterlist = charadex.page.mainMasterlist.reverse();
 
-document.getElementById("charadex-gallery-item").innerHTML = charadex.page.mainMasterlist2;
+document.getElementById("charadex-gallery-item").innerHTML = charadex.page.mainMasterlist;
   
 });
