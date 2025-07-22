@@ -43,35 +43,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   /* Main Designs
   ===================================================================== */
   let maindesigns = await charadex.initialize.page(null, charadex.page.index.maindesigns, (arr) => {
-    
-    // Splice the silly little array
-    let sliceAmount = charadex.page.index.maindesigns.amount || 6;
-    arr.splice(sliceAmount, arr.length);
-
-  });
-
-
-    /* Pet Designs
-  ===================================================================== */
-  let petdesigns = await charadex.initialize.page(null, charadex.page.index.petdesigns, (arr) => {
-    
-    // Splice the silly little array
-    let sliceAmount = charadex.page.index.petdesigns.amount || 6;
-    arr.splice(sliceAmount, arr.length);
-
-  });
-
-
-  /* Load Page
-  ===================================================================== */
-  charadex.tools.loadPage('.softload', 500);
-
-});
-
-
-  /* Main Designs Sort Fix
-  ===================================================================== */
-let maindesigns = await charadex.initialize.page(null, charadex.page.index.maindesigns, (arr) => {
   // Force sliceAmount to 8
   let sliceAmount = 8;
 
@@ -81,11 +52,13 @@ let maindesigns = await charadex.initialize.page(null, charadex.page.index.maind
   // Overwrite original array in-place
   arr.length = 0;
   arr.push(...recent);
-});
 
-  /* Pet Designs Sort Fix
+  });
+
+
+  /* Pet Designs
   ===================================================================== */
-let petdesigns = await charadex.initialize.page(null, charadex.page.index.petdesigns, (arr) => {
+  let petdesigns = await charadex.initialize.page(null, charadex.page.index.petdesigns, (arr) => {
   // Force sliceAmount to 4
   let sliceAmount = 4;
 
@@ -95,4 +68,12 @@ let petdesigns = await charadex.initialize.page(null, charadex.page.index.petdes
   // Overwrite original array in-place
   arr.length = 0;
   arr.push(...recent);
+
+  });
+
+
+  /* Load Page
+  ===================================================================== */
+  charadex.tools.loadPage('.softload', 500);
+
 });
