@@ -38,12 +38,12 @@ document.addEventListener("DOMContentLoaded", async () => {
 /* Sort Fix
 ======================================================================= */
 
-const mainMasterlist = ["ID"]
+const charadex.page.mainMasterlist = ["ID"]
 
 // Sort in ascending order
-mainMasterlist.sort();
+charadex.page.mainMasterlist.sort();
 
 // Reverse the order
-mainMasterlist.reverse()
+charadex.page.mainMasterlist.reverse()
 
-console.log(mainMasterlist)
+console.log(charadex.page.mainMasterlist)
