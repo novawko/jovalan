@@ -36,7 +36,12 @@ document.addEventListener("DOMContentLoaded", async () => {
 /* Sort Fix
 ======================================================================= */
 
+// Create an Array
 const charadex.page.mainMasterlist = ["ID"];
-charadex.page.mainMasterlist.reverse();
+
+// Reverse the Array
+const charadex.page.mainMasterlist2 = charadex.page.mainMasterlist.reverse();
+
+document.getElementById("charadex-list").innerHTML = charadex.page.mainMasterlist2;
   
 });
