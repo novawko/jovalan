@@ -31,5 +31,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   );
   
   charadex.tools.loadPage('.softload', 500);
+
+/* ==================================================================== */
+/* Sort Fix
+======================================================================= */
+
+const maindesigns = ["ID"];
+const maindesigns = maindesigns.reverse();
+console.log(maindesigns);
   
 });
