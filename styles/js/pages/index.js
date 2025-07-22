@@ -51,7 +51,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   // Overwrite original array in-place
   arr.length = 0;
-  arr.push(...recent).reverse();
+  arr.push(...recent);
+
+  // Reverse the thing
+  let recent = [];
+  let maindesigns = [...recent].reverse();
+  console.log(maindesigns);
+  console.log(recent);
 
   });
 
@@ -67,7 +73,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   // Overwrite original array in-place
   arr.length = 0;
-  arr.push(...recent).reverse();
+  arr.push(...recent);
+
+  // Reverse the thing
+  let recent = [];
+  let petdesigns = [...recent].reverse();
+  console.log(petdesigns);
+  console.log(recent);
 
   });
 
