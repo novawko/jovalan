@@ -36,8 +36,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 /* Sort Fix
 ======================================================================= */
 
-const maindesigns = ["ID"];
-const maindesigns = maindesigns.reverse();
-console.log(maindesigns);
+const charadex.page.mainMasterlist = ["ID"];
+const charadex.page.mainMasterlist = charadex.page.mainMasterlist.reverse();
+console.log(charadex.page.mainMasterlist);
   
 });
