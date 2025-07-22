@@ -42,6 +42,6 @@ const charadex.page.mainMasterlist = ["ID"];
 // Reverse the Array
 const charadex.page.mainMasterlist2 = charadex.page.mainMasterlist.reverse();
 
-document.getElementById("charadex-list").innerHTML = charadex.page.mainMasterlist2;
+document.getElementById("charadex-gallery-item").innerHTML = charadex.page.mainMasterlist2;
   
 });
