@@ -165,7 +165,7 @@ charadex.page.mainMasterlist = {
   sort: {
     toggle: true,
     key: "id",
-    order: "desc",
+    order: "asc",
     parameters: []
   },
 
