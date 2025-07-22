@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   arr.push(...recent);
 
   // Reverse the sliced array
-  const reversedArray = slicedArray.reverse();
+  const recent = slicedArray.reverse();
   console.log(reversedArray);
 
   });
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   arr.push(...recent);
 
   // Reverse the sliced array
-  const reversedArray = slicedArray.reverse();
+  const recent = slicedArray.reverse();
   console.log(reversedArray);
 
   });
