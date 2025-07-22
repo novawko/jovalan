@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   arr.push(...recent);
 
   // Reverse the sliced array
-  const maindesigns = maindesigns.reverse();
+  let maindesigns = petdesigns.reverse();
   console.log(maindesigns);
 
   });
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   arr.push(...recent);
 
   // Reverse the sliced array
-  const petdesigns = petdesigns.reverse();
+  let petdesigns = petdesigns.reverse();
   console.log(petdesigns);
 
   });
