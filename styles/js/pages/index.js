@@ -54,9 +54,14 @@ document.addEventListener("DOMContentLoaded", async () => {
   arr.push(...recent);
 
   // Reverse the sliced array
-  let maindesigns = [...recent].reverse();
+  let maindesigns = ["ID"];
+  let recent = maindesigns.reverse();
+
+  console.log(recent);
+  // [5, 4, 3, 2, 1]
+
   console.log(maindesigns);
-  console.log(...recent);
+  // [5, 4, 3, 2, 1]
 
   });
 
@@ -75,9 +80,14 @@ document.addEventListener("DOMContentLoaded", async () => {
   arr.push(...recent);
 
   // Reverse the sliced array
-  let petdesigns = [...recent].reverse();
+  let petdesigns = ["ID"];
+  let recent = petdesigns.reverse();
+
+  console.log(recent);
+  // [5, 4, 3, 2, 1]
+
   console.log(petdesigns);
-  console.log(...recent);
+  // [5, 4, 3, 2, 1]
 
   });
 
