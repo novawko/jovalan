@@ -153,7 +153,7 @@ charadex.page.faq = {
 
 
 
-/* Masterlist
+/* Main Masterlist
 /* --------------------------------------------------------------- */
 charadex.page.mainMasterlist = {
 
@@ -166,7 +166,7 @@ charadex.page.mainMasterlist = {
     toggle: true,
     key: "id",
     order: "asc",
-    parameters: []
+    parameters: ['ID']
   },
 
   pagination: {
