@@ -33,17 +33,3 @@ document.addEventListener("DOMContentLoaded", async () => {
   charadex.tools.loadPage('.softload', 500);
   
 });
-
-/* ==================================================================== */
-/* Sort Fix
-======================================================================= */
-
-const charadex.page.mainMasterlist = ["ID"]
-
-// Sort in ascending order
-charadex.page.mainMasterlist.sort();
-
-// Reverse the order
-charadex.page.mainMasterlist.reverse()
-
-console.log(charadex.page.mainMasterlist)
