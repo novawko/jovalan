@@ -779,31 +779,31 @@ p:last-child {
 }
 
 .terms-nav-tabs {
-  border-radius: 0px;
-  border: 0px;
+  border-radius: 0px !important;
+  border: 0px !important;
 }
 
 .terms-nav-tabs:hover {
-  color: var(--cd-secondary-color);
-  background-color: var(--cd-secondary-color);
+  color: var(--cd-secondary-color) !important;
+  background-color: var(--cd-secondary-color) !important;
 }
 
 .terms-nav-tabs:active {
-  color: var(--cd-secondary-color);
-  background-color: var(--cd-secondary-color);
+  color: var(--cd-secondary-color) !important;
+  background-color: var(--cd-secondary-color) !important;
 }
 
 .terms-header {
-  background-color: var(--cd-primary-color);
-  color: var(--cd-secondary-color);
+  background-color: var(--cd-primary-color) !important;
+  color: var(--cd-secondary-color) !important;
 }
 
 .terms-card {
-  border-radius: 15% 15% 0% 0%;
+  border-radius: 15% 15% 0% 0% !important;
 }
 
 .terms-footer {
-  border-radius: 0% 0% 15% 15%;
-  color: #fff;
-  background-color: var(--cd-primary-color);
+  border-radius: 0% 0% 15% 15% !important;
+  color: #fff !important;
+  background-color: var(--cd-primary-color) !important;
 }
