@@ -233,7 +233,7 @@ body {
   background-color: var(--cd-body-background-color);
   background-image: var(--cd-body-background-image);
   background-position: center;
-  background-size: 300px;
+  background-size: 250px;
   background-repeat: repeat;
   z-index: 2;
   position: relative; /* Needed for positioning the pseudo-element */
