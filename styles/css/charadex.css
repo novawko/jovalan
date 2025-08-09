@@ -27,12 +27,12 @@ body {
   /* ============================================================= */
   /* Backgrounds
   ================================================================ */
-  --cd-body-background-color: #4c8ebd;
+  --cd-body-background-color: #4185cd;
   --cd-content-background-color: #ffffff;
   --cd-faded-background-color: #f8f8f8;
 
   /* Background Extras */
-  --cd-body-background-image: url(https://file.toyhou.se/images/12345889_xxcsaLYcveQBELB.png);
+  --cd-body-background-image: url(/assets/seamless1.png);
 
   /* ============================================================= */
   /* Text
@@ -233,9 +233,23 @@ body {
   background-color: var(--cd-body-background-color);
   background-image: var(--cd-body-background-image);
   background-position: center;
-  background-size: 40%;
+  background-size: 300px;
   background-repeat: repeat;
+  z-index: 2;
+  position: relative; /* Needed for positioning the pseudo-element */
 
+}
+
+/* Global Background Gradient */
+  body::before {
+  background: linear-gradient(to left, rgb(122 234 255 / 40%) 0%, rgb(132 100 255 / 40%) 100%);
+  z-index: -1; /* Ensure the gradient is above the background image */
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 
