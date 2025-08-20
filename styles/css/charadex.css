@@ -791,3 +791,9 @@ p:last-child {
   background-color: var(--cd-rarity-legendary-bg);
   color: var(--cd-rarity-legendary-txt);
 }
+
+@media only screen and (max-width: 600px) {
+.cd-hero-title {
+  height: 150px !important;
+}
+}
