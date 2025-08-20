@@ -761,6 +761,11 @@ p:last-child {
   }
 }
 
+@media only screen and (max-width: 600px) {
+.cd-hero-title {
+  min-height: 150px !important;
+}
+}
 
 /* ============================================================= */
 /* Rarity
@@ -790,10 +795,4 @@ p:last-child {
 .badge-mythic {
   background-color: var(--cd-rarity-legendary-bg);
   color: var(--cd-rarity-legendary-txt);
-}
-
-@media only screen and (max-width: 600px) {
-.cd-hero-title {
-  height: 150px !important;
-}
 }
