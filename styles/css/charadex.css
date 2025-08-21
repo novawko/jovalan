@@ -735,13 +735,6 @@ p:last-child {
   min-height: 150px;
 }
 
-.cd-prompt-item-background {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  min-height: 500px;
-}
-
 /* Makes sure your text formatting is preserved from the sheet */
 /* Best for large areas like notes */
 .cd-text-pre {
