@@ -114,7 +114,7 @@ charadex.page.species = {
   sheetPage: charadex.sheet.pages.species,
   sitePage: 'species',
   dexSelector: 'charadex',
-  profileProperty: 'title',
+  profileProperty: 'speciesname',
 
   sort: {
     toggle: true,
@@ -145,7 +145,7 @@ charadex.page.species = {
   search: {
     toggle: true,
     filterToggle: false,
-    parameters: ['Title']
+    parameters: ['Species Name']
   },
 
   prevNext: {
