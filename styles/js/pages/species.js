@@ -19,12 +19,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         $(this).attr('style', `background-image: url(${image})`);
       });
     }
-/* ==================================================================== */
-/* Load Contained Image
-======================================================================= */
-document.addEventListener("DOMContentLoaded", async () => {
-  let dex = await charadex.initialize.page(null, charadex.page.species, null, 
-  (listData) => {
     let backgroundElement = $('.cd-prompt-item-background');
     if (listData.type == 'profile') {
       backgroundElement.attr('style', `background-image: url(${listData.profileArray[0].containedimage})`);
