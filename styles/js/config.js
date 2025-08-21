@@ -35,8 +35,8 @@ charadex.sheet = {
     petsLog:           "pets log",
     faq:               "faq",
     staff:             "mods",
-    speciesList:       "species list",
-    speciesSheets:     "sheets gallery",
+    species:           "species list",
+    sheets:            "sheets gallery",
   },
 
   options: {
@@ -109,9 +109,9 @@ charadex.page.staff = {
 
 /* Species List
 /* --------------------------------------------------------------- */
-charadex.page.speciesList = {
+charadex.page.species = {
 
-  sheetPage: charadex.sheet.pages.speciesList,
+  sheetPage: charadex.sheet.pages.species,
   sitePage: 'species',
   dexSelector: 'charadex',
   profileProperty: 'title',
@@ -158,9 +158,9 @@ charadex.page.speciesList = {
 
 /* Sheets Gallery
 /* --------------------------------------------------------------- */
-charadex.page.sheetsGallery = {
+charadex.page.sheets = {
 
-  sheetPage: charadex.sheet.pages.sheetsGallery,
+  sheetPage: charadex.sheet.pages.sheets,
   sitePage: 'sheets',
   dexSelector: 'charadex',
   profileProperty: 'id',
