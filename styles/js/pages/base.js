@@ -9,5 +9,20 @@ import { charadex } from '../utilities.js';
 document.addEventListener("DOMContentLoaded", async () => {
   charadex.tools.loadIncludedFiles();
   charadex.tools.updateMeta();
-  charadex.tools.loadPage('#charadex-body', 100);
+  charadex.tools.loadPage('#charadex-body', 0);
 });
+
+/* ==================================================================== */
+/* Fixed Automatic Scroll
+======================================================================= */
+  window.addEventListener("load", () => {
+    const hash = window.location.hash;
+    if (hash) {
+      const target = document.querySelector(hash);
+      if (target) {
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    }
+  });
