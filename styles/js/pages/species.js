@@ -19,5 +19,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         $(this).attr('style', `background-image: url(${image})`);
       });
     }
+  });
   charadex.tools.loadPage('.softload', 500);
 });
