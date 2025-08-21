@@ -731,8 +731,9 @@ p:last-child {
 /* Prompts */
 .cd-prompt-background {
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   min-height: 150px;
+  background-repeat: no-repeat;
 }
 
 /* Makes sure your text formatting is preserved from the sheet */
