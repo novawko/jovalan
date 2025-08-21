@@ -27,11 +27,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   (listData) => {
     let backgroundElement = $('.cd-prompt-item-background');
     if (listData.type == 'profile') {
-      backgroundElement.attr('style', `background-image: url(${listData.profileArray[0].image})`);
+      backgroundElement.attr('style', `background-image: url(${listData.profileArray[0].containedimage})`);
     } else {
       backgroundElement.each(function(i) {
-        const image = listData.array[i]?.image;
-        $(this).attr('style', `background-image: url(${image})`);
+        const containedimage = listData.array[i]?.image;
+        $(this).attr('style', `background-image: url(${containedimage})`);
       });
     }
   charadex.tools.loadPage('.softload', 500);
