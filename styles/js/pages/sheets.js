@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   let dex = await charadex.initialize.page(
     null, 
-    charadex.page.sheetsGallery, 
+    charadex.page.sheets, 
     (arr) => {
       for (let entry of arr) {
 
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         let fancyTagArr = [];
         if (entry.tags.length >= 1) {
           for (let tag of entry.tags) {
-            fancyTagArr.push(`<a href="${charadex.url.addUrlParameters(charadex.url.getPageUrl(charadex.page.sheetsGallery.sitePage), {tags: tag})}">#${tag.trim()}</a>`);
+            fancyTagArr.push(`<a href="${charadex.url.addUrlParameters(charadex.url.getPageUrl(charadex.page.sheets.sitePage), {tags: tag})}">#${tag.trim()}</a>`);
           }
         }
         entry.fancytags = fancyTagArr.join(' ');
