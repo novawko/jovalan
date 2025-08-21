@@ -31,10 +31,12 @@ charadex.sheet = {
   pages: {
     mainMasterlist:    "main masterlist",
     mainMasterlistLog: "main masterlist log",
-    petsMasterlist: "pets masterlist",
-    petsLog:       "pets log",
-    faq:           "faq",
-    staff:         "mods",
+    petsMasterlist:    "pets masterlist",
+    petsLog:           "pets log",
+    faq:               "faq",
+    staff:             "mods",
+    speciesList:       "species list",
+    speciesSheets:     "sheets gallery",
   },
 
   options: {
@@ -102,6 +104,103 @@ charadex.page.staff = {
   },
 
 };
+
+
+
+/* Species List
+/* --------------------------------------------------------------- */
+charadex.page.speciesList = {
+
+  sheetPage: charadex.sheet.pages.speciesList,
+  sitePage: 'species',
+  dexSelector: 'charadex',
+  profileProperty: 'title',
+
+  sort: {
+    toggle: true,
+    key: "id",
+    order: "asc",
+    parameters: []
+  },
+
+  pagination: {
+    toggle: true,
+    bottomToggle: true,
+    amount: 12,
+  },
+
+  filters: {
+    toggle: false,
+    parameters: {
+      'TBA': [],
+    }
+  },
+
+  fauxFolder: {
+    toggle: false,
+    folderProperty: '',
+    parameters: [],
+  },
+
+  search: {
+    toggle: true,
+    filterToggle: false,
+    parameters: ['Title']
+  },
+
+  prevNext: {
+    toggle: true,
+  },
+
+};
+
+
+
+/* Sheets Gallery
+/* --------------------------------------------------------------- */
+charadex.page.sheetsGallery = {
+
+  sheetPage: charadex.sheet.pages.sheetsGallery,
+  sitePage: 'sheets',
+  dexSelector: 'charadex',
+  profileProperty: 'id',
+
+  sort: {
+    toggle: true,
+    key: "id",
+    order: "asc",
+    parameters: []
+  },
+
+  pagination: {
+    toggle: true,
+    bottomToggle: true,
+    amount: 12,
+  },
+
+  filters: {
+    toggle: false,
+    parameters: {}
+  },
+
+  fauxFolder: {
+    toggle: false,
+    folderProperty: '',
+    parameters: [],
+  },
+
+  search: {
+    toggle: true,
+    filterToggle: true,
+    parameters: ['All', 'Artist', 'Tags']
+  },
+
+  prevNext: {
+    toggle: false,
+  },
+
+};
+
 
 
 /* FAQ
