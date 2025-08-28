@@ -43,18 +43,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   /* Main Designs
   ===================================================================== */
   let maindesigns = await charadex.initialize.page(null, charadex.page.index.maindesigns, (arr) => {
-  // Force sliceAmount to 8
-  let sliceAmount = 8;
-
-  // Get the last 8 (or fewer if less than 8 exist)
-  let recent = arr.slice(-sliceAmount);
-
-  // Overwrite original array in-place
-  arr.length = 0;
-  arr.push(...recent);
-
-  // Reverse the thing
-  let maindesigns = arr.reverse();
+    
+    // Splice the silly little array
+    let sliceAmount = charadex.page.index.maindesigns.amount || 8;
+    arr.splice(sliceAmount, arr.length);
 
   });
 
