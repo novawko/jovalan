@@ -48,6 +48,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     let sliceAmount = charadex.page.index.maindesigns.amount || 8;
     arr.splice(sliceAmount, arr.length);
 
+    // Reverse the thing
+    let maindesigns = arr.reverse();
+
   });
 
 
