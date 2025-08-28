@@ -57,15 +57,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   /* Pet Designs
   ===================================================================== */
   let petdesigns = await charadex.initialize.page(null, charadex.page.index.petdesigns, (arr) => {
-  // Force sliceAmount to 4
-  let sliceAmount = 4;
-
-  // Get the last 4 (or fewer if less than 4 exist)
-  let recent = arr.slice(-sliceAmount);
-
-  // Overwrite original array in-place
-  arr.length = 0;
-  arr.push(...recent);
+  
+  // Splice the silly little array
+  let sliceAmount = charadex.page.index.petdesigns.amount || 4;
+  arr.splice(sliceAmount, arr.length);
 
   // Reverse the thing
   let petdesigns = arr.reverse();
