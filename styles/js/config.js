@@ -341,7 +341,7 @@ charadex.page.petsMasterlist = {
   sort: {
     toggle: true,
     key: "id",
-    order: "asc",
+    order: "desc",
     parameters: []
   },
 
