@@ -22,25 +22,3 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
   charadex.tools.loadPage('.softload', 500);
 });
-
-/* ==================================================================== */
-/* View the collapsed link when visited
-======================================================================= */
-    const hash = window.location.hash; // e.g., "#myTab" or "#section2"
-
-    if (hash) {
-        // Proceed with opening the tab
-    }
-
-    const targetElement = document.querySelector(hash); // Selects the element with the matching ID
-
-        if (targetElement && targetElement.classList.contains('collapse')) {
-            // For Bootstrap accordions
-            $(targetElement).collapse('show');
-        } else if (targetElement && targetElement.classList.contains('tab-pane')) {
-            // For Bootstrap tabs, find the corresponding tab link and click it
-            const tabLink = document.querySelector(`a[href="${hash}"]`);
-            if (tabLink) {
-                tabLink.click();
-            }
-        }
