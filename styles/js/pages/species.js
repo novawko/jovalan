@@ -26,37 +26,14 @@ document.addEventListener("DOMContentLoaded", async () => {
 /* ==================================================================== */
 /* View the collapsed link when visited
 ======================================================================= */
-document.addEventListener("DOMContentLoaded", function () {
-    // Function to handle opening the correct collapse section
-    function openCollapseByHash() {
-        const hash = window.location.hash; // Get the hash from the URL (#collapseOne)
-
-        if (hash) {
-            // Remove the 'active' class from all currently active sections
-            document.querySelectorAll('.collapse-content.active').forEach(el => {
-                el.classList.remove('active');
-            });
-
-            // Find the target element using the hash as a selector
-            const targetElement = document.querySelector(hash);
-
-            if (targetElement && targetElement.classList.contains('collapse-content')) {
-                // Add the 'active' class to show the target element
-                targetElement.classList.add('active');
-                
-                // Optional: Scroll to the opened section smoothly
-                // Adding a slight delay can ensure the element is fully expanded before scrolling
-                setTimeout(() => {
-                    targetElement.scrollIntoView({ behavior: 'auto', block: 'start' });
-                }, 100);
+        if (targetElement && targetElement.classList.contains('collapse')) {
+            // For Bootstrap accordions
+            $(targetElement).collapse('show');
+        } else if (targetElement && targetElement.classList.contains('tab-pane')) {
+            // For Bootstrap tabs, find the corresponding tab link and click it
+            const tabLink = document.querySelector(`a[href="${hash}"]`);
+            if (tabLink) {
+                tabLink.click();
             }
         }
-    }
-
-    // 1. Call the function on page load (in case a hash is in the initial URL)
-    openCollapseByHash();
-
-    // 2. Add event listener for hash changes within the same page (e.g., clicking the links)
-    // This event fires when the fragment identifier changes
-    window.addEventListener('hashchange', openCollapseByHash);
 });
