@@ -26,6 +26,14 @@ document.addEventListener("DOMContentLoaded", async () => {
 /* ==================================================================== */
 /* View the collapsed link when visited
 ======================================================================= */
+    const hash = window.location.hash; // e.g., "#myTab" or "#section2"
+
+    if (hash) {
+        // Proceed with opening the tab
+    }
+
+    const targetElement = document.querySelector(hash); // Selects the element with the matching ID
+
         if (targetElement && targetElement.classList.contains('collapse')) {
             // For Bootstrap accordions
             $(targetElement).collapse('show');
@@ -36,4 +44,3 @@ document.addEventListener("DOMContentLoaded", async () => {
                 tabLink.click();
             }
         }
-});
