@@ -42,7 +42,7 @@ charadex.sheet = {
   options: {
 
     designTypes: ['All', 'Owner Design', 'Staff Design', 'MYO', 'Event', 'Gacha', 'NPC', 'Custom', 'Bred', 'Premade'],
-    statuses: ['All', 'Resell', 'Trade', 'Gift', 'Voided', 'For Sale', 'Purchased', 'WIP', 'Not For Trade'],
+    statuses: ['All', 'Resell', 'Trade', 'Gift', 'Offer', 'Voided', 'For Sale', 'Purchased', 'WIP', 'Raffle', 'Not For Trade'],
     petStatuses: ['All', 'Yes', 'No'],
     rarity: ['All', 'Common', 'Uncommon', 'Rare', 'Mythical', 'Legendary', 'Unique', 'Etherial', 'Tier1', 'Tier2', 'Royal Tier', 'Open', 'Closed', 'Unlisted', 'Voided'],
     species: ['All', 'Kanpolo', 'Deep Sea Kanpolo', 'Freshwater Kanpolo', 'Hyper Kanpolo', 'Cracke’D', 'Kumiyaa', 'Burgvoir', 'Liz’ae', 'Bood Shark', 'Tech-Alipo', 'Vanguard', 'Cedave', 'Serum X', 'Koekanook', 'Humboroon', 'Noodle Moth', 'Heavian', 'Woobar', 'Sylvarian', 'Yohl’Tonir'],
