@@ -47,6 +47,7 @@ charadex.sheet = {
     rarity: ['All', 'Common', 'Uncommon', 'Rare', 'Mythical', 'Legendary', 'Unique', 'Etherial', 'Tier1', 'Tier2', 'Royal Tier', 'Open', 'Closed', 'Unlisted', 'Voided'],
     species: ['All', 'Kanpolo', 'Deep Sea Kanpolo', 'Freshwater Kanpolo', 'Hyper Kanpolo', 'Cracke’D', 'Kumiyaa', 'Burgvoir', 'Liz’ae', 'Bood Shark', 'Tech-Alipo', 'Vanguard', 'Cedave', 'Serum X', 'Koekanook', 'Humboroon', 'Noodle Moth', 'Heavian', 'Woobar', 'Sylvarian', 'Yohl’Tonir'],
     petSpecies: ['All', 'Cooinowee', 'Narrasael', 'Cuid', 'Jovian Sea Serpent', 'Maambacor', 'Gorwahna', 'Quecko', 'Wottlepodl', 'Chubbö', 'Kiutu', 'Yuecoatl', 'Cuttle-Poddl'],
+    speciesTypes: ['All', 'Open Species', 'Semi-Closed Species', 'Closed Species', 'Pet Species'],
   }
 
 }
@@ -137,9 +138,9 @@ charadex.page.species = {
   },
 
   fauxFolder: {
-    toggle: false,
-    folderProperty: '',
-    parameters: [],
+    toggle: true,
+    folderProperty: 'Species Type',
+    parameters: charadex.sheet.options.speciesTypes,
   },
 
   search: {
@@ -149,7 +150,7 @@ charadex.page.species = {
   },
 
   prevNext: {
-    toggle: true,
+    toggle: false,
   },
 
 };
