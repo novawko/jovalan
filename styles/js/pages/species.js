@@ -5,20 +5,6 @@ import { charadex } from '../charadex.js';
 
 
 /* ==================================================================== */
-/* Load any specific navtabs on all of the site
-======================================================================= */
-$(function() {
-  var hash = window.location.hash;
-
-  if (hash != '') {
-    $('.tab-pane').removeClass('active in'); // Remove 'active' from all tab panes
-    $(hash).addClass('active in'); // Add 'active' to the target tab pane
-    $(`a[href="${hash}"]`).tab('show'); // Show the tab linked to the hash
-  }
-});
-
-
-/* ==================================================================== */
 /* Load
 ======================================================================= */
 document.addEventListener("DOMContentLoaded", async () => {
