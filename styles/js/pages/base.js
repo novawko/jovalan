@@ -41,6 +41,31 @@ $(function() {
 });
 
 /* ==================================================================== */
+/* Load them STUBBORN navtabs while linking to them
+======================================================================= */
+
+$(function () {
+  var $tabs  = $("ul.tabs > li");
+  var $panes = $(".tab_container > .tab_content");
+
+  function activate(i) {
+    $tabs.removeClass("active").eq(i).addClass("active");
+    $panes.hide().eq(i).show();
+  }
+
+  // Open by URL hash if present; otherwise default to index 1
+  var idxFromHash = $tabs.find('a[href="' + location.hash + '"]').parent().index();
+  activate(idxFromHash >= 0 ? idxFromHash : 1);
+
+  $tabs.on("click", function (e) {
+    e.preventDefault();
+    var i = $(this).index();
+    activate(i);
+    history.replaceState(null, "", $(this).find("a").attr("href"));
+  });
+});
+
+/* ==================================================================== */
 /* Dark/Light Toggle
 ======================================================================= */
   $(function () {
