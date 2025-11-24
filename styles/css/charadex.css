@@ -183,6 +183,7 @@ body {
   /* Background */
   --cd-button-background-color: var(--cd-primary-color);
   --cd-button-background-color-hover: var(--cd-secondary-color);
+  --cd-button-background-color:active var(--cd-secondary-color);
 
   /* Text */
   --cd-button-text-color: var(--cd-primary-text-color);
