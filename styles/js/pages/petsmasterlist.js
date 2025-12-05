@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
            // Create the log dex
         if (charadex.tools.checkArray(listData.profileArray[0].petsLog)) {
-          let petlogs = await charadex.initialize.page(
+          let petslogs = await charadex.initialize.page(
             listData.profileArray[0].petsLog,
             charadex.page.petsMasterlist.relatedData['pets log']
           );
