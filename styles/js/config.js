@@ -293,7 +293,7 @@ charadex.page.mainMasterlist = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'ID', 'Design', 'Owner', 'Designer', 'Artist', 'Traits']
+    parameters: ['All', 'ID', 'Owner', 'Designer', 'Artist', 'Traits']
   },
 
   prevNext: {
@@ -307,7 +307,7 @@ charadex.page.mainMasterlist = {
       sheetPage: charadex.sheet.pages.mainMasterlistLog,
       primaryProperty: 'id',
       relatedProperty: 'id',
-      dexSelector: 'log',
+      dexSelector: 'mainmasterlistlog',
       profileProperty: 'maindesign',
       profileToggle: false,
 
@@ -369,7 +369,7 @@ charadex.page.petsMasterlist = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'ID', 'Design', 'Owner', 'Designer', 'Artist', 'Traits']
+    parameters: ['All', 'ID', 'Owner', 'Designer', 'Artist', 'Traits']
   },
 
   prevNext: {
@@ -383,7 +383,7 @@ charadex.page.petsMasterlist = {
       sheetPage: charadex.sheet.pages.petsLog,
       primaryProperty: 'id',
       relatedProperty: 'id',
-      dexSelector: 'log',
+      dexSelector: 'petslog',
       profileProperty: 'petdesign',
       profileToggle: false,
 
@@ -405,91 +405,6 @@ charadex.page.petsMasterlist = {
   }
 
 };
-
-/* Inventory
-/* --------------------------------------------------------------- */
-charadex.page.inventory = {
-
-  // Dex Set Up
-  sheetPage: charadex.sheet.pages.inventory,
-  sitePage: 'inventories',
-  dexSelector: 'charadex',
-  profileProperty: 'username',
-
-  // Dex Options
-  sort: {
-    toggle: true,
-    key: "username",
-    order: "asc",
-    parameters: []
-  },
-
-  pagination: {
-    toggle: true,
-    bottomToggle: true,
-    amount: 24,
-  },
-
-  filters: {
-    toggle: false,
-    parameters: {}
-  },
-
-  fauxFolder: {
-    toggle: false,
-    folderProperty: '',
-    parameters: [],
-  },
-
-  search: {
-    toggle: true,
-    filterToggle: false,
-    parameters: ['Username']
-  },
-
-  prevNext: {
-    toggle: false,
-  },
-
-
-  // Related Data
-  relatedData: {
-    
-    [charadex.sheet.pages.mainMasterlist]: {
-
-      // This imports the config from the masterlist
-      // So you dont have to repeat yourself
-      ...charadex.page.mainMasterlist, 
-
-      sheetPage: charadex.sheet.pages.mainMasterlist,
-      sitePage: 'mainmasterlist',
-      primaryProperty: 'username',
-      relatedProperty: 'owner',
-      dexSelector: 'maindesigns',
-      profileProperty: 'maindesign',
-      profileToggle: false,
-
-    }
-
-  },
-
- [charadex.sheet.pages.petsMasterlist]: {
-
-      // This imports the config from the masterlist
-      // So you dont have to repeat yourself
-      ...charadex.page.petsMasterlist, 
-
-      sheetPage: charadex.sheet.pages.petsMasterlist,
-      sitePage: 'petsmasterlist',
-      primaryProperty: 'username',
-      relatedProperty: 'owner',
-      dexSelector: 'petdesigns',
-      profileProperty: 'petdesign',
-      profileToggle: false,
-
-    }
-
-  },
 
 
 /* Index
