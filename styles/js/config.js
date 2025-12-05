@@ -307,7 +307,7 @@ charadex.page.mainMasterlist = {
       sheetPage: charadex.sheet.pages.mainMasterlistLog,
       primaryProperty: 'id',
       relatedProperty: 'id',
-      dexSelector: 'log',
+      dexSelector: 'mainmasterlistlog',
       profileProperty: 'maindesign',
       profileToggle: false,
 
@@ -383,7 +383,7 @@ charadex.page.petsMasterlist = {
       sheetPage: charadex.sheet.pages.petsLog,
       primaryProperty: 'id',
       relatedProperty: 'id',
-      dexSelector: 'log',
+      dexSelector: 'petslog',
       profileProperty: 'petdesign',
       profileToggle: false,
 
